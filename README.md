@@ -8,7 +8,7 @@ Fetchr PHP/SDK enables PHP developers to use Fetchr shipping and tracking APIs i
 2. curl enabled
  
 ### Installation ###
-* You can install this package via Composer by adding this package in the require section
+You can install this package via Composer by adding this package in the require section
 
 ```
 "require": {
@@ -27,12 +27,6 @@ Fetchr PHP/SDK enables PHP developers to use Fetchr shipping and tracking APIs i
 require 'vendor/autoload.php';
 $fetchr = new \fetchr\php_sdk\Shiphappy("CLIENT_USERNAME","CLIENT_PASSWORD");
 ```
- 
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
 
 ### If you have any concerns or questions, you can contact us on: ###
 * tech@fetchr.us
