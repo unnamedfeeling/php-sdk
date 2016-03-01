@@ -1,6 +1,6 @@
 <?php
  
-use Fetchr\Shiphappy\Shiphappy;
+use Fetchr\PHP-SDK\Shiphappy;
  
 class ShiphappyTest extends PHPUnit_Framework_TestCase {
  

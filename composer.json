@@ -1,8 +1,8 @@
 {
-	"name": "fetchr/shiphappy",
+	"name": "fetchr/php-sdk",
 	"description": "Fetchr is a technology solution that makes shipping as delightful as shopping.",
     "license": "MIT",
-    "keywords": ["Shiphappy"],
+    "keywords": ["Shiphappy", "Fetchr"],
     "authors": [
         {
             "name": "Islam Khalil",
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Fetchr\\Shiphappy\\": "src"
+            "fetchr\\php_sdk\\": "src"
         }
     }
 }

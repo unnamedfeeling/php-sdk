@@ -1,7 +1,7 @@
 <?php 
 require_once "vendor/autoload.php";
 
-$fetchr = new \Fetchr\Shiphappy\Shiphappy('apifulfilment','apifulfilment');
+$fetchr = new \fetchr\php_sdk\Shiphappy('apifulfilment','apifulfilment');
 
 // echo $fetchr->getBulkStatus(array('1606109430583', '1610199431176'));
 //echo $fetchr->getOrderStatus('1606109430583');
@@ -27,22 +27,6 @@ $fetchr = new \Fetchr\Shiphappy\Shiphappy('apifulfilment','apifulfilment');
 //             );
 
 $dataErp[] = 	array(
-	// 'order' => array(
- //                'items' => $itemArray,
- //                'details' => array(
- //                    'status' => '',
- //                    'discount' => $discount,
- //                    'grand_total' => $shippedGrandTotal,//$grandtotal,
- //                    'customer_email' => $order->getCustomerEmail(),
- //                    'order_id' => $this->userName.'_'.$order->getIncrementId(),
- //                    'customer_firstname' => $address['firstname'],
- //                    'payment_method' => $paymentType,
- //                    'customer_mobile' => $address['telephone'],
- //                    'customer_lastname' => $address['lastname'],
- //                    'order_country' => $address['country_id'],
- //                    'order_address' => $address['street'].', '.$address['city'].', '.$address['country_id'],
- //                ),
- //            ), 
           		'order' => array(
                     'items' => array(
                         '0' => array(

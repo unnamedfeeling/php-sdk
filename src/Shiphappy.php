@@ -1,4 +1,4 @@
-<?php namespace Fetchr\Shiphappy;
+<?php namespace fetchr\php_sdk;
 
 use \Httpful\Request;
 /**
