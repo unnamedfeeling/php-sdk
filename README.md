@@ -75,5 +75,46 @@ $fetchr->createDeliveryOrder($dataErp);
 ```
 *Note : all the capital-case words must be replaced with variables
 
+***Create Fulfillment Orders***
+
+```
+#!php
+<?php
+$dataErp[] = array(
+            'order' => array(
+                'items' => array(
+                    'client_ref' => 'ORDER_ID',
+                    'name' => 'ITEM_NAME',
+                    'sku' => 'ITEM_SKU',
+                    'quantity' => 'QUANITITY'
+                    'merchant_details' => array(
+                        'mobile' => 'STORE_MOBILE_NUMBER',
+                        'phone' => 'STORE_PHONE_NUMBER',
+                        'name' => 'STPRE_NAME',
+                        'address' => 'STORE_ADDRESS',
+                    ),
+                    'COD' => 'DELIVERY_RATE',
+                    'price' => 'ITEM_PRICE',
+                    'is_voucher' => 'NO',
+                ),
+                'details' => array(
+                    'status' => '',
+                    'discount' => 'DISCOUNT_VALUE',
+                    'grand_total' => 'GRAND_TOTAL',// If the payment type was credit card then it must be 0 else put the real value of the total
+                    'customer_email' => 'CUSTOMER_EMAIL',
+                    'order_id' => 'CLIENT_USERNAME'.'_'.'ORDER_ID',
+                    'customer_firstname' => 'CUSTOMER_FIRST_NAME',
+                    'payment_method' => PAYMENT_TYPE, // If cash on delivery then COD otherwise CD 
+                    'customer_mobile' => ('CUSTOMER_PHONE'?'CUSTOMER_PHONE':'N/A'),
+                    'customer_lastname' => 'CUSTOMER_LAST_NAME',
+                    'order_country' => 'COUNTRY_CODE', // Two letters code, ex: United Arab Emarites => AE, Jordan => JO ...etc 
+                    'order_address' => CUSTOMER_ADDRESS.', '.CUSTOMER_CITY.', '.CUSTOMER_COUNTRY_CODE_TWO_LETTERS,
+                ),
+            ),
+        );
+$fetchr->createFulfilmentOrder($dataErp);
+```
+* Note: you can add as much items as you like in the items array
+
 ### If you have any concerns or questions, you can contact us on: ###
 * tech@fetchr.us
