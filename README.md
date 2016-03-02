@@ -114,7 +114,7 @@ $dataErp[] = array(
         );
 $fetchr->createFulfilmentOrder($dataErp);
 ```
-* Note: you can add as much items as you like in the items array
+*Note: you can add as much items as you like in the items array
 
 ### If you have any concerns or questions, you can contact us on: ###
 * tech@fetchr.us
