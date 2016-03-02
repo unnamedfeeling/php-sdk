@@ -34,7 +34,7 @@ $fetchr = new \fetchr\php_sdk\Shiphappy("CLIENT_USERNAME","CLIENT_PASSWORD");
 
 $fetchr->getOrderStatus('TRACKING_ID');
 ```
-***Get Orders Bulk Statuses***
+***Get the status of more than one order***
 
 ```
 #!php
