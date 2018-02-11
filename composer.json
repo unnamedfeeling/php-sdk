@@ -3,6 +3,7 @@
 	"description": "Fetchr is a technology solution that makes shipping as delightful as shopping.",
     "license": "MIT",
     "keywords": ["Shiphappy", "Fetchr"],
+	"version": "1.0.0.1",
     "authors": [
         {
             "name": "Islam Khalil",
